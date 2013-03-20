@@ -5,6 +5,7 @@ abort "These specs should only be run on the backup-testbox VM" unless
 
 require 'bundler/setup'
 require 'backup'
+require 'timecop'
 
 Dir[File.expand_path('../support/**/*.rb', __FILE__)].each {|f| require f }
 
